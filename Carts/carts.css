@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+#inventory-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.golf-cart-block {
+    display: grid;
+    grid-template-columns: 35% 15% 55fr;
+}
+
+.golf-cart-block.odd {
+    grid-template-columns: 35% 15% 55fr;
+}
+
+.golf-cart-content-cnt {
+    grid-row: 1;
+}
+
+.golf-cart-main-img-cnt {
+    width: 100%;
+}
+
+.display-img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.golf-cart-thumbnail-img-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.thumb-img {
+    max-width: 8rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+.golf-cart-content-title {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.golf-cart-content-text {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features-features-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.golf-cart-features-cnt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.features-group {
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.checkmark {
+    margin-right: 5px;
+    color: rgb(28, 27, 28);
+}
+
+.features-group--right {
+    margin-left: 1rem;
+}
+
+@media (max-width: 786px) {
+    .golf-cart-block {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .golf-cart-content-cnt {
+        grid-template-columns: 1fr;
+    }
+    
+    .golf-cart-content-text {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .golf-cart-main-img-cnt {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    
+    .golf-cart-thumbnail-image-cnt {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem auto;
+        overflow-x: auto;
+        gap: 1rem;
+    }
+    
+    .golf-cart-content-title {
+        font-size: 1.8rem;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0.4rem;
+        margin-top: 0.5rem;
+    }
+    
+    .golf-cart-content-text {
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+    
+    .features-features-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+    
+    .golf-cart-features-cnt {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-group {
+        list-style: none;
+        font-size: 0.8rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    
+    .checkmark {
+        margin-right: 0.5rem;
+        color: rgb(28, 27, 28);
+    }
+}
