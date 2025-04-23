@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <section id="calculator-section">
+        <div class="calc-container">
+            <h2 class="calc-heading">Find Out Your New Cart's Monthly Payment</h2>
+            <p class="calc-subheading">Find Out Why ... Check out your monthly payment</p>
+            <h3 class="calc-form-title">Your New Monthly Payment</h3>
+            <div class="calc-form-cnt">
+                <label for="cart-model">Select Golf Cart Model:</label>
+                <select name="cart-model" id="cart-model"></select>
+                
+                <label for="down-payment">Down Payment:</label>
+                <input type="text" name="down-payment" id="down-payment" value="1000" />
+                
+                <label for="interest-rate">Interest Rate (%):</label>
+                <input type="range" id="interest-rate" name="interest-rate" min="0" max="10" step="0.1" value="5" />
+                <span id="rate-value">5%</span>
+                
+                <label for="loan-years">Time Period (Years):</label>
+                <select name="loan-years" id="loan-years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="calc-result-cnt">
+                <p class="calc-result-title">
+                    <span>Monthly Payment:</span>
+                    <span id="monthly-payment">$0.00</span>
+                </p>
+                <a href="https://dealerdirect.apptraker.com/my/guest?dealer-10890" class="calc-button">
+                    Get Approved
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+</body>
+</html>
