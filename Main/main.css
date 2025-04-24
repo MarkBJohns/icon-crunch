@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    color: white;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("/imgs/icon-sarasota-hero-template-4-20-2025.webp");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  /* Mobile-specific override */
+
+
+
+.hero-logo-cnt{
+    max-width:18rem;
+    position:absolute;
+    top: 2rem;
+    left:2rem;
+}
+.hero-logo{
+    max-width:100%
+}
+
+.hero-text{
+    font-family: sans-serif;
+   
+}
+
+.hero-content{
+    margin-left: 3%;
+    padding-top: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+   }
+
+.hero-headline{
+    font-size: 1.5rem;
+    font-weight:bold;
+   
+  line-height: 1.25;
+  margin-bottom: -1rem;
+}
+
+.hero-headline-2nd{
+    display: block;
+    font-size: 9rem;
+    font-weight:800;  
+    margin-bottom: 2rem;
+    margin-top:0;
+    margin-left: -5px;
+   
+}
+
+.hero-sub-headline{
+    font-size: 1.4rem;
+    line-height: 1.7;
+    letter-spacing: .65px;
+    font-weight: 400;
+}
+
+
+
+
+.hero-subheadline-2nd{
+    display: block;
+}
+.hero-sub-headline-3rd{
+    display: block;
+}
+
+.hero-buttons-cnt{
+    margin-top: 22rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.contact-btn{
+    padding: 1rem 3rem;
+    background-color: rgb(63, 19, 76);
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    border-radius: 20rem;
+
+}
+
+
+
+
+
+
+/*****************************************Mobile aMedi Queries*********************************/
+
+@media (max-width: 600px) {
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("/imgs/MOBILE-HERO-TEMPLATE.png");
+      }
+
+.hero-headline-2nd{
+    display: block;
+    font-size: 3.95rem;
+    font-weight:800;  
+    margin-bottom: 1.5rem;
+    margin-top:.5rem;
+    margin-left: -5px;
+   }
+   .hero-headline{
+    font-size: .75rem;
+    font-weight:bold;
+   
+  line-height: 1.25;
+  margin-bottom: -1rem;
+}
+
+.hero-content{
+    margin-left: 5%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: -5rem;
+   }
+
+   .hero-sub-headline{
+    font-size: .7rem;
+    line-height: 1.7;
+    letter-spacing: .65px;
+    font-weight: 400;
+ 
+}
+
+.subheadline-hide{
+    display: none;
+}
+
+.MOBILE-hero-sub-headline{
+    font-size: .7rem;
+    line-height: 2;   
+}
+
+.hero-logo-cnt{
+    max-width:12rem;
+    position:absolute;
+    top: 1rem;
+    left:1rem;
+}
+.hero-logo{
+    max-width:100%
+}
+
+.hero-menu-mobile{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}
+
+.hero-buttons-cnt{
+    position:absolute;
+   bottom:8rem;
+  left:1.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-btn{
+    padding: 1rem 3rem;
+    background-color: rgba(63, 19, 76,0);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    border-radius: 20rem;
+    border: solid white 1.5px;
+    margin:0 auto;
+
+}
+.shop-button{
+
+    padding: 1rem 2rem;
+    
+}
+
+   }
+
+
+
+/*****************************************Desktop Media Queries*********************************/
+
+   @media (min-width: 601px) {
+ .MOBILE-hero-sub-headline{
+    display: none;
+ }
+ .hero-menu-mobile{
+    display: none;
+}
+
+    }

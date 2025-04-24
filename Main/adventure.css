@@ -1,0 +1,228 @@
+#adventure-section {
+    width: 100%;
+    aspect-ratio: 16 /9;
+    background-color: #cacaca; /* choose background color */
+    font-family: 'Poppins', sans-serif;
+}
+
+.adventure-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.adventure-hero-cnt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+}
+
+.adventure-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.adventure-content-cnt {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adventure-heading {
+    font-size: 4.8rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+}
+
+.adventure-content-title {
+    font-size: 3.6rem;
+    line-height: 1.1;
+    text-align: center;
+    
+}
+
+.adventure-content-accent {
+    color: #f641a8;
+}
+
+.adventure-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    line-height: 1.3;
+    text-align: center;
+    text-wrap: balance;
+    margin-bottom: 4rem;
+}
+
+.adventure-content-list {
+    list-style: none;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.adventure-bullet {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
+
+.adventure-bullet::before {
+    content: "\2714";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #f641a8;
+}
+
+.adventure-bullet-bold {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.adventure-cta {
+    width: 90%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.adventure-button {
+    background: linear-gradient(
+        to right bottom,
+        #6f16a0,
+        #f641a8
+    );
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 1.2rem;
+    white-space: nowrap;
+    text-transform: capitalize;
+    height: fit-content;
+}
+
+.adventure-button:hover,
+.adventure-button:focus {
+    background: linear-gradient(
+        to right bottom,
+        #6f16a0,
+        #be3455
+    );
+}
+
+.adventure-contact {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.adventure-contact:hover,
+.adventure-contact:focus {
+    outline: none;
+    text-shadow: 2px 2px 2px #be3455;
+}
+
+@media (max-width: 990px) {
+    
+    .adventure-heading {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .adventure-content-title {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .adventure-content-text {
+        text-wrap: unset;
+    }
+    
+    .adventure-button {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+    }
+    
+    .adventure-contact {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 630px) {
+    #adventure-section {
+        aspect-ratio: unset;
+    }
+    
+    .adventure-container {
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        top: unset;
+        left: unset;
+    }
+    
+    .adventure-hero-cnt {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: unset;
+        max-width: unset;
+    }
+    
+    .adventure-hero-img {
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        object-fit: contain;
+    }
+    
+    .adventure-content-cnt {
+        position: unset;
+        top: 100%;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .adventure-heading {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .adventure-content-title {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .adventure-button {
+        font-size: 1.6rem;
+    }
+    
+    .adventure-contact {
+        font-size: 1.6rem;
+    }
+    
+    .adventure-bullet {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,310 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+ 
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("/imgs/icon-sarasota-hero-template-4-20-2025.webp");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  /* Mobile-specific override */
+
+
+
+.hero-logo-cnt{
+    max-width:18rem;
+    position:absolute;
+    top: 2rem;
+    left:2rem;
+}
+.hero-logo{
+    max-width:100%
+}
+
+.hero-text{
+    font-family: sans-serif;
+    color: white;
+   
+}
+
+.hero-content{
+    margin-left: 3%;
+    padding-top: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+   }
+
+.hero-headline{
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:aliceblue;
+   
+  line-height: 1.25;
+  margin-bottom: -1rem;
+}
+
+.hero-headline-2nd{
+    display: block;
+    font-size: 9rem;
+    font-weight:800;  
+    margin-bottom: 2rem;
+    margin-top:0;
+    margin-left: -5px;
+   
+}
+
+.hero-sub-headline{
+    font-size: 1.4rem;
+    line-height: 1.7;
+    letter-spacing: .65px;
+    font-weight: 400;
+}
+
+
+
+
+.hero-subheadline-2nd{
+    display: block;
+}
+.hero-sub-headline-3rd{
+    display: block;
+}
+
+.hero-buttons-cnt{
+    margin-top: 22rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.hero-buttons{
+    padding: 1rem 3rem;
+    border: solid white 2px;
+   
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    border-radius: 20rem;
+
+}
+/**************************NOW OPEN **********************************/
+
+.now-open{
+    width: 1440px;
+    margin: 0 auto;
+}
+.now-open-text-cnt{
+ margin-top:3rem;
+ margin-bottom: 3rem;;
+}
+
+.now-open-headline{
+    text-align: center;
+    font-family: "poppins";
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.now-open-text {
+    text-align: center;
+    font-family: "poppins";
+    font-size: 1.4rem;
+    font-weight: 300;
+
+}
+.now-open-video-cnt{
+    display: flex;
+    justify-content: center;
+  width: 80rem;
+    height: auto;
+    margin:0 auto;
+}
+
+.hero-video{
+    width: 100%;
+}
+
+.now-open-button-cnt{
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 1rem;
+ 
+
+}
+.contact-btn{
+    background-color: rgb(80, 12, 144);
+    padding:1.5rem 4rem;
+    border-radius: 20rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "poppins";
+    text-decoration: none;
+}
+/*****************************************E40FX*****************/
+
+.e40fx{
+
+    padding:5rem 0;
+}
+
+.cart-section--odd{
+    background-color:white
+    padding-top;
+}
+
+
+.e40fx-title{
+    max-width: 1320px;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-family: "poppins";
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.e40fx-text{
+    max-width: 1320px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: "poppins";
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+.e40fx-main-content-cnt{
+    display: grid;
+    grid-template-columns: 52.5% 15% 32.5%;
+    margin:0 5%;
+ 
+}
+.cart-grid-cnt--odd{
+    display: grid;
+    grid-template-columns: 35% 15% 55%;
+}
+
+.e40fx-main-image-cnt{
+
+    width:100%;
+}
+.display-img{
+    width:90%;
+    border-radius: 10px;
+  
+}
+
+.e40fx-thumbnail-image-cnt{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+
+}
+.thumb-img{
+    max-width:8rem;
+    height:auto;
+    border-radius: 5px;
+}
+
+
+
+.e40fx-content-title{
+    font-size: 3rem;
+    font-family: "poppins";
+    margin-bottom: 1rem;
+    font-weight: 900;
+    margin-bottom: 0;
+
+}
+.cart-content-sub-title{
+    font-size: 1.5rem;
+    font-family: "poppins";
+    margin-bottom: 1rem;
+    font-weight: 400;
+  
+}
+
+
+
+.e40fx-content-text{
+    font-size: 1rem;
+    font-family: "poppins";
+    margin-bottom: 1rem;
+}
+
+
+.text-remove{
+    font-size: 1rem;
+    font-family: "poppins";
+    margin-bottom: 1rem;
+}
+
+.features-features-title{
+    font-family: "poppins";
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+
+}
+.e40fx-features-cnt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.features-group{
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+.checkmark{
+    margin-right: 5px;
+    color: rgb(28, 27, 28);
+   
+}
+
+.features-group--right{
+    margin-left: 1rem;
+}
+
+
+
+
+ /*****************************************Section BREAK**********************/
+
+ .explore-title{
+    font-family: "poppins";
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding:3rem 0;
+    background-color: rgb(75, 22, 124);
+}
+.explore-title--epic{
+    font-family: "poppins";
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding:3rem 0;
+    background-color: rgb(253, 23, 169);
+   
+   
+}
+
